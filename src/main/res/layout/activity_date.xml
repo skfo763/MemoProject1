@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/memoactivity_coordinatorlayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/tool_bar2"/>
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기본정보"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/dateactivity_eventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Event Name"
+        android:padding="10dp"
+        android:background="#8c8c8c"
+        android:backgroundTint="#8c8c8c"
+        android:drawableStart="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/dateactivity_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Location"
+        android:padding="10dp"
+        android:background="#8c8c8c"
+        android:backgroundTint="#8c8c8c"
+        android:drawableStart="@drawable/ic_add_location_black_24dp"
+        android:drawableLeft="@drawable/ic_add_location_black_24dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:text="날짜"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <EditText
+            android:id="@+id/dateactivity_startdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="DD / MM / YYYY"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#8c8c8c"
+            android:backgroundTint="#8c8c8c"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_forward_black_24dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/dateactivity_enddate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="DD / MM / YYYY"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#8c8c8c"
+            android:backgroundTint="#8c8c8c"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중요도"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"/>
+
+    <Spinner
+        android:id="@+id/dateactivity_spinner"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="45dp"
+        android:background="#8c8c8c"
+        android:entries="@array/fatality">
+    </Spinner>
+
+    <ImageButton
+        android:id="@+id/dateactivity_save"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vertical_align_bottom_black_24dp"
+        android:background="#ffffff"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>

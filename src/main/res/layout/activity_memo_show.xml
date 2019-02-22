@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoShowActivity"
+    android:orientation="vertical"
+    android:background="@color/myColor">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/memoshowactivity_coordinatorlayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/tool_bar3"/>
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/memoshowactivity_coordinatorlayout"
+        android:layout_above="@+id/memoshowactivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/memoshowactivity_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/memoshowactivity_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="15dp"
+            android:text="작성시간"
+            android:textSize="17dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:id="@+id/memoshowactivity_memotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:text="메모 내용입니다."
+                android:textSize="14dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/memoshowactivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/memoshowactivity_buttondelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="@color/myColor"/>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vertical_align_bottom_black_24dp"
+            android:background="@color/myColor"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

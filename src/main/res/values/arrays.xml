@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fatality">
+        <item>중요도 5 : 매우 중요한 일정</item>
+        <item>중요도 4 : 중요한 일정, 업무관련</item>
+        <item>중요도 3 : 보통의 일정</item>
+        <item>중요도 2 : 경미한 일정</item>
+        <item>중요도 1 : 일상 속의 계획</item>
+    </string-array>
+</resources>

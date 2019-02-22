@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_memo"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="메모">
+    </item>
+
+    <item
+        android:id="@+id/action_calander"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="이벤트">
+    </item>
+
+    <item
+        android:id="@+id/action_setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="설정"/>
+
+</menu>
